@@ -21,7 +21,7 @@ with open("./Input/Letters/starting_letter.txt", mode = "r") as input_letter:
     for name in names_list:
         stripped_name = name.strip("\n")
         new_letter = template_letter.replace(PLACEHOLDER, stripped_name)
-        with open(f"./Output/ReadyToSend/starting_letter_{stripped_name}.txt", mode="w") as letter_final:
+        with open(f"./Output/ReadyToSend/letter_for_{stripped_name}.txt", mode="w") as letter_final:
             letter_final.write(new_letter)
 
 
